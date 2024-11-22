@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body><h3 align="center">Registration Form</h3>
+	<!--<form method="GET" action="page_name">-->
+	<form action="page_name" method="post" enctype="multipart/form-data" target="_blank">
+	<fieldset>
+		<legend>Personal Details :</legend>
+		<label for="enroll">Enrollment N :</label><br>
+		<input type="text" id="enroll" name="enroll" value="TSPL-ST2325" readonly/><br><br>
+		<label for="name">Name :</label><br>
+		<input type="text" id="name" placeholder="Enter your name" name="name"
+		required /> <span>In Capital / Block Letter</span><br><br>
+		<label for="mo.n">Mobile N. :</label><br>
+		<input type="number" id="mo.n" placeholder="Enter mobile number" required name="mob"
+		pattern="[0-9]{10}"/><br><br>
+		<label for="dob">Date of Birth :</label><br>
+		<input type="date" id="dob" required name="dob"/><br><br>
+		<label for="pass">Password :</label><br>
+		<input type="password" id="pass" required name="pwd"/><br><br>
+		<label for="col">Color :</label><br>
+		<input type="color" id="col" required name="clr"/><br><br>
+		<label>Range :</label><br>
+		<input type="range"/><br><br>
+		<label for="email">Email</label><br>
+		<input type="email"id="email" required name="eml"/><br><br>
+		<label>Week</label><br>
+		<input type="week"/><br><br>
+		<label>Date and Time</label><br>
+		<input type="datetime-local" required name="dt"/><br><br>
+		<label>Gender</label><br>
+		<input type="radio" name="gen" />Male
+		<input type="radio" name="gen" />Female
+		<input type="radio" name="gen" />Other<br><br>
+		<label>Qualification</label><br>
+		<input type="checkbox" name="Q" checked required />Highschool
+		<input type="checkbox" name="Q" />Inter
+		<input type="checkbox" name="Q" />B.A
+		
+	</fieldset>
+	<fieldset>
+		<legend>Address :</legend>
+		<label>Parmanent Address :</label><br>
+		<textarea placeholder="enter address" rows="5" cols="50" required name="addr"></textarea>
+		<br><br>
+		<label>Address :</label><br>
+		<textarea placeholder="enter address" rows="5" cols="50" required name="addr"></textarea>
+		<br><br>
+		<label>City :</label>
+		<select>
+		<optgroup label="UP" required >
+		<option selected >Kushinagar</option>
+		<option>Ayodhya</option>
+		<option>Gorakhpur</option>
+		<option>Ambedkar Nagar</option>
+		<option>Hata</option>
+		</optgroup>	
+		<optgroup label="Vihar">
+		<option>patna</option>
+		</optgroup>
+		</select>		
+	</fieldset>
+
+	<fieldset>
+	<legend>Upload document</legend><br>
+	<label>Choose file :</label><br>
+	<input type="file" multiple /><br><br>
+	<label>Choose file :</label><br>
+	<input type="file" multiple />
+	</fieldset>
+	<br>
+	<input type="submit" value="save"/>
+	<button>Submit</button>
+		<button>reset</button>
+		<button>Save</button>
+		<button>Next</button><br>
+	</form>	
+</body>
+</html>

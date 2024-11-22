@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form login signin</title>
+    <style>
+        *{margin:0;
+            padding:0;
+            color:white ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            outline: none;
+        }
+        body{
+            display:flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: turquoise;
+        }
+        .cont{
+            position: relative;
+            align-items: center;
+            padding: 20px 30px;
+            width:400px;
+            background: #0b0909;
+            border-radius: 4x;
+            box-shadow: 0 0 15px rgba(0,0,0,.3);
+        }
+        .switch{
+            position: absolute;
+            right: 30px;
+            display:flex;
+            border-bottom: 1px solid #fe0066;
+        }
+        .login{
+            padding: 5px 12px;
+            background: aquamarine;
+            margin-bottom: 10px;
+            text-align: right;
+            margin-left: 4px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: 0.3s ease;
+        }
+        .cont .outer{
+            width: 100%;
+            margin-top:40px;
+            text-align: center;
+            position: relative;
+        }
+        .outer #form{
+            width: 200%;
+            position: relative;
+            display: flex;
+            margin: auto;
+            transition: 0.2s ease-in-out;
+        }
+        #page{margin: auto;
+        width:100%;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            padding: 10px 15px;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .element{
+            position: relative;
+        }
+        .element input{
+            width:80%;
+            height: 40px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            background: #2a2a2a;
+            border: 1px solid #f5f4f4;
+            padding-left: 40px;
+            font-size: 20px;
+            letter-spacing: 2px;
+
+        }
+        input::placeholder{
+            color:#d4cdcd;
+            font-size: 20px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="switch">
+            <div class="login">Login</div>
+            <div class="signin">Signin</div>
+        </div>
+        <div class="outer">
+            <form action="" id="form">
+                <div id="page">
+                    <label>Login Form</label>
+                    <div class="element">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <input type="password"placeholder="password">
+                </div>
+                <button id="btn">Login</button>
+
+                <div id="page">
+                    <label>Signin Form</label>
+                    <div class="element">
+                        <input type="text" placeholder="Email Address">           
+                    </div>
+                    <div class="element">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <input type="password"placeholder="password">
+                </div>
+                <button id="btn">Signin</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

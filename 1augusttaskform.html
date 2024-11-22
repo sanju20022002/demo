@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head><title>form tag</title></head>
+	<body bgcolor="yellowgreen">
+	<b>Step 1:Your Details</b><br><br>
+	<form method="post"enctype="multipart/form-data"action="page_name"target="_blanck">
+	<fieldset>
+	<label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text"id="name"placeholder="First and last name"required />
+	</fieldset><fieldset>
+	<label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="email"id="email"name="email"placeholder="example@domain.com"
+	/></fieldset>
+	<fieldset>
+	<label for="phone">Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number"id="phone"placeholder="+912333333314"required 
+	name="phone"/></fieldset><br>
+	<b>Step 2: Delivery address<b><br><br>
+	<fieldset>
+	<label>Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<textarea cols="15"rows="3" required></textarea></fieldset>
+	<fieldset>
+	<label for="pin">Post code</label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number"id="pin"required name="pin"/>
+	</fieldset>
+	<fieldset>
+	<label for="con">Country</label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text"id="con"name="country"required />
+	</fieldset><br>
+	<b>Step 3 : Card Details<b><br><br>
+	<fieldset>
+	<label for="card">Card Type</label><br><br>
+	<input type="radio"id="card"name="card"/><button>VISA</button>&nbsp;VISA	
+	<input type="radio"id="card"name="card"/><button>AMEX</button>&nbsp;AmEx
+	<input type="radio"id="card"name="card"/><button>MC</button>&nbsp;Mastercard
+	</fieldset>
+	<fieldset>
+	<label for="cn">Card number</label>
+	&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number"id="cn"name="card n"required />
+	</fieldset>
+		<fieldset>
+		<label for="code">Sequirty code</label>
+	&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text"required />
+		</fieldset>
+			<fieldset>
+			<label for="name">Name on card</label>
+			&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text"id="name"name="name"placeholder="Exact name as on the card"/>
+			</fieldset><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button>Buy &nbsp;&nbsp; it &nbsp;&nbsp; !</button>
+	</form>
+	</body>
+</html>
